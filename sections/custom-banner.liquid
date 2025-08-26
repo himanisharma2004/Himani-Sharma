@@ -1,20 +1,108 @@
 {{ 'custom-banner.css | assests_url | stylesheet_tag' }}
 
-<div class="custom-banner">
-    <!-- banner html with liquid variables from schema -->
+<section class="custom-banner">
+  <div class="banner-container">
+    <div class="banner-content">
+      // banner text
+      <div class="banner-text">
+        {% if section.settings.eyebrow_text != blank %}
+          <p class="banner-eyebrow">{{ section.settings.eyebrow_text }}</p>
+        {% endif %}
+
+        {% if section.settings.main_heading != blank %}
+          <h1 class="banner-heading">{{ section.settings.main_heading }}</h1>
+        {% endif %}
+
+        {% if section.settings.subheading != blank %}
+          <p class="banner-subheading">{{ section.settings.subheading }}</p>
+        {% endif %}
+        // banner button
+        <div class="banner-buttons">
+          {% if section.settings.primary_button_text != blank %}
+            <a href="{{ section.settings.primary_button_url }}" class="btn btn-primary animated-btn">
+              {{ section.settings.primary_button_text }}
+            </a>
+          {% endif %}
+
+          {% if section.settings.secondary_button_text != blank %}
+            <a href="{{ section.settings.secondary_button_url }}" class="btn btn-secondary animated-btn">
+              {{ section.settings.secondary_button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      {% if section.settings.banner_image %}
+        <div class="banner-image">
+            {% assign alt_text = section.settings.banner_image.alt | default: section.settings.main_heading %}
+          <img src="{{ section.settings.banner_image | image_url: '800*600'}}"
+           alt="{{ alt_text | escape}}"
+           width="800"
+           height="600"
+           loading="lazy"
+          >
+        </div>
+      {% endif %}
     </div>
+  </div>
+</section>
 
 {% schema %}
 {
-    "name": "Custom Banner",
-    "settings": [
-        {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading",
-            "default": "Your heading here"
-        }
-        // more settings for editable text
-    ]    
+  "name": "Custom Banner",
+  "class": "custom-banner-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow Text",
+      "default": "Welcome to our store"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Discover Amazing Products"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Find the perfect products for your need with our clothes collections"
+    },
+    {
+      "type": "text",
+      "id": "primary_button_text",
+      "label": "Primary Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "primary_button_url",
+      "label": "Primary Button URL",
+      "default": "/collections/all"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_text",
+      "label": "Secondary Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_url",
+      "label": "Secondary Button URl",
+      
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Banner"
+    }
+  ]
 }
 {% endschema %}
