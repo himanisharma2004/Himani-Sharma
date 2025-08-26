@@ -1,0 +1,55 @@
+{{ 'custom-product-grid.css' | asset_url | stylesheet_tag }}
+<section class="custom-grid">
+    <div class="grid">
+        {% for block in section.blocks %}
+            {% assign product = all_products[block.settings.product] %}
+            {% if product %}
+                <div class="product-card" data-handle="{{ product.handle }}">
+                    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+                    <h3>{{ product.title }}</h3>
+                    <p>{{ product.price | money }}</p>
+                    <button class="open-popup" data-handle="{{ product.handle }}">View Details</button>
+                </div>
+                    {% endif %}
+                    {% endfor %}
+    </div>
+    
+    <div id="product-popup" class="popup-overlay">
+        <div class="popup-box">
+            <button id="popup-close">&times;</button>
+            <div id="popup-content"></div>
+        </div>
+     </div>
+</section>
+
+{% schema %}
+{
+    "name": "Custom Product Grid",
+    "settings": [],
+    "blocks": [
+        {
+            "type": "product",
+            "name":"Product",
+            "settings":[
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Select Product"
+                }
+            ]
+        }
+    ],
+    "max_blocks": 6,
+    "presets": [
+        {
+            "name": "Custom Product Grid"
+        }
+    ]
+}
+{% endschema %}
+
+{% javascript %}
+
+{{ 'custom-product-grid.js' | asset_url | script_tag }}
+
+{% endjavascript %}
