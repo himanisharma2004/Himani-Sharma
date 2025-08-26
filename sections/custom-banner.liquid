@@ -1,0 +1,20 @@
+{{ 'custom-banner.css | assests_url | stylesheet_tag' }}
+
+<div class="custom-banner">
+    <!-- banner html with liquid variables from schema -->
+    </div>
+
+{% schema %}
+{
+    "name": "Custom Banner",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Your heading here"
+        }
+        // more settings for editable text
+    ]    
+}
+{% endschema %}
