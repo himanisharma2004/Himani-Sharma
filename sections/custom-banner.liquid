@@ -1,98 +1,66 @@
 {{ 'custom-banner.css | assests_url | stylesheet_tag' }}
-
-<section class="custom-banner" style="background-image: url({{ section.settings.bg_image | image_url: width:1600 }});">
-  <div class="banner-container">
-    <div class="banner-content">
-      
-        {% if section.settings.eyebrow_text != blank %}
-          <div class="banner-eyebrow">{{ section.settings.eyebrow_text }}</div>
-        {% endif %}
-
-        {% if section.settings.main_heading != blank %}
-          <h1 class="banner-heading">{{ section.settings.main_heading }}</h1>
-        {% endif %}
-
-        {% if section.settings.subheading != blank %}
-          <p class="banner-subheading">{{ section.settings.subheading }}</p>
-        {% endif %}
-        
-        <div class="banner-buttons">
-          {% if section.settings.primary_btn_text != blank %}
-            <a href="{{ section.settings.primary_btn_link }}" class="btn btn-primary animated-btn">
-              {{ section.settings.primary_btn_text }}
-            </a>
-          {% endif %}
-
-          {% if section.settings.secondary_btn_text != blank %}
-            <a href="{{ section.settings.secondary_btn_link }}" class="btn btn-secondary animated-btn">
-              {{ section.settings.secondary_btn_text }}
-            </a>
-          {% endif %}
-        </div>
-      </div>
-      </div>
-    </section>
-    
+<section class="custom-banner">
+  <div class="banner-content">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.subheading }}</p>
+    <div class="banner-buttons">
+      {% if section.settings.primary_btn_text != blank %}
+        <a href="{{ section.settings.primary_btn_link }}" class="btn primary">
+          {{ section.settings.primary_btn_text }}
+        </a>
+        {% endif %} 
+      {% if section.settings.secondary_btn_text != blank %}
+        <a href="{{ section.settings.secondary_btn_link }}" class="btn secondary">
+          {{ section.settings.secondary_btn_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
 
 {% schema %}
 {
-  "name": "Custom Banner",
-
+  "name" : "Customer Banner",
   "settings": [
-    {
-        "type": "image_picker",
-        "id": "bg_image",
-        "label": "Background Image"
-    },
-    {
-      "type": "text",
-      "id": "eyebrow",
-      "label": "Eyebrow Text",
-      "default": "Welcome to our store"
-    },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
-      "default": "Discover Amazing Products"
-    },
-    {
-      "type": "textarea",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "Find the perfect products for your need with our clothes collections"
+      "label": "Banner Heading",
+      "default": "Welcome to Our Store"
     },
     {
       "type": "text",
-      "id": "primary_btn_text",
-      "label": "Primary Button Text",
+      "id": "subheading",
+      "label": "Banner Subheading",
+      "default": "Discover our latest collection"
+    },
+    {
+      "type":"url",
+      "id":"primary_btn_link",
+      "label":"Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id":"primary_btn_text",
+      "label":"Primary Button Text",
       "default": "Shop Now"
     },
     {
-      "type": "url",
-      "id": "primary_btn_link",
-      "label": "Primary Button Link",
-
+      "type":"url",
+      "id": "secondary_btn_link",
+      "label": "Secondary Button Link"
     },
     {
-      "type": "text",
+      "type":"text",
       "id": "secondary_btn_text",
       "label": "Secondary Button Text",
       "default": "Learn More"
-    },
-    {
-      "type": "url",
-      "id": "secondary_btn_link",
-      "label": "Secondary Button link",
-      
-      
     }
 
   ],
   "presets": [
     {
-      "name": "Custom Banner",
-      "category": "Custom"
+      "name": "Custom Banner"
     }
   ]
 }
