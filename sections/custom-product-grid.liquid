@@ -8,7 +8,7 @@
                     <img src="{{ product.featured_image | img_url: width: 400 | image_tag: alt: product.title }}>
                     <h3>{{ product.title }}</h3>
                     <p>{{ product.price | money }}</p>
-                    <button class= "open-popup" data-handle="{{ product.handle | escape }}">View Details</button>
+                    <button class= "open-popup" data-handle='{{ product.handle | escape }}''>View Details</button>
                 </div>
                     {% endif %}
                     {% endfor %}
