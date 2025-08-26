@@ -24,7 +24,7 @@
           {% endif %}
 
           {% if section.settings.secondary_btn_text != blank %}
-            <a href="{{ section.settings.secondary_button_link }}" class="btn btn-secondary animated-btn">
+            <a href="{{ section.settings.secondary_btn_link }}" class="btn btn-secondary animated-btn">
               {{ section.settings.secondary_btn_text }}
             </a>
           {% endif %}
@@ -37,59 +37,62 @@
 {% schema %}
 {
   "name": "Custom Banner",
-  "class": "custom-banner-section",
+
   "settings": [
     {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
+    },
+    {
       "type": "text",
-      "id": "eyebrow_text",
+      "id": "eyebrow",
       "label": "Eyebrow Text",
       "default": "Welcome to our store"
     },
     {
       "type": "text",
-      "id": "main_heading",
-      "label": "Main Heading",
+      "id": "heading",
+      "label": "Heading",
       "default": "Discover Amazing Products"
     },
     {
-      "type": "text",
+      "type": "textarea",
       "id": "subheading",
       "label": "Subheading",
       "default": "Find the perfect products for your need with our clothes collections"
     },
     {
       "type": "text",
-      "id": "primary_button_text",
+      "id": "primary_btn_text",
       "label": "Primary Button Text",
       "default": "Shop Now"
     },
     {
       "type": "url",
-      "id": "primary_button_url",
-      "label": "Primary Button URL",
+      "id": "primary_btn_link",
+      "label": "Primary Button Link",
       "default": "/collections/all"
     },
     {
       "type": "text",
-      "id": "secondary_button_text",
+      "id": "secondary_btn_text",
       "label": "Secondary Button Text",
       "default": "Learn More"
     },
     {
       "type": "url",
-      "id": "secondary_button_url",
-      "label": "Secondary Button URl",
+      "id": "secondary_btn_link",
+      "label": "Secondary Button link",
       
-    },
-    {
-      "type": "image_picker",
-      "id": "banner_image",
-      "label": "Banner Image"
+      
     }
+
   ],
   "presets": [
     {
-      "name": "Custom Banner"
+      "name": "Custom Banner",
+      "category": "Custom"
     }
   ]
 }
