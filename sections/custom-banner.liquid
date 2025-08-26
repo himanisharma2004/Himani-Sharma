@@ -1,12 +1,11 @@
 {{ 'custom-banner.css | assests_url | stylesheet_tag' }}
 
-<section class="custom-banner">
+<section class="custom-banner" style="background-image: url({{ section.settings.bg_image | image_url: width:1600 }});">
   <div class="banner-container">
     <div class="banner-content">
-      // banner text
-      <div class="banner-text">
+      
         {% if section.settings.eyebrow_text != blank %}
-          <p class="banner-eyebrow">{{ section.settings.eyebrow_text }}</p>
+          <div class="banner-eyebrow">{{ section.settings.eyebrow_text }}</div>
         {% endif %}
 
         {% if section.settings.main_heading != blank %}
@@ -16,35 +15,24 @@
         {% if section.settings.subheading != blank %}
           <p class="banner-subheading">{{ section.settings.subheading }}</p>
         {% endif %}
-        // banner button
+        
         <div class="banner-buttons">
-          {% if section.settings.primary_button_text != blank %}
-            <a href="{{ section.settings.primary_button_url }}" class="btn btn-primary animated-btn">
-              {{ section.settings.primary_button_text }}
+          {% if section.settings.primary_btn_text != blank %}
+            <a href="{{ section.settings.primary_btn_link }}" class="btn btn-primary animated-btn">
+              {{ section.settings.primary_btn_text }}
             </a>
           {% endif %}
 
-          {% if section.settings.secondary_button_text != blank %}
-            <a href="{{ section.settings.secondary_button_url }}" class="btn btn-secondary animated-btn">
-              {{ section.settings.secondary_button_text }}
+          {% if section.settings.secondary_btn_text != blank %}
+            <a href="{{ section.settings.secondary_button_link }}" class="btn btn-secondary animated-btn">
+              {{ section.settings.secondary_btn_text }}
             </a>
           {% endif %}
         </div>
       </div>
-      {% if section.settings.banner_image %}
-        <div class="banner-image">
-            {% assign alt_text = section.settings.banner_image.alt | default: section.settings.main_heading %}
-          <img src="{{ section.settings.banner_image | image_url: '800*600'}}"
-           alt="{{ alt_text | escape}}"
-           width="800"
-           height="600"
-           loading="lazy"
-          >
-        </div>
-      {% endif %}
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
+    
 
 {% schema %}
 {
