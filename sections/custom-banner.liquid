@@ -15,7 +15,6 @@
     </div>
   </div>
 </section>
-{{ 'custom-product-grid.js' | asset_url | script_tag }}
 <style>
   .custom-banner {
     background: url({{ section.settings.bg_image | image_url: 'master' }}) center/cover no-repeat;
@@ -87,7 +86,7 @@
     if(closeBtn) closeBtn.addEventListener("click", () => popup.classList.remove("active"));
   });
 </script>
-
+{{ 'custom-product-grid.js' | asset_url | script_tag }}
 {% schema %}
 {
   "name": "Custom Grid",
