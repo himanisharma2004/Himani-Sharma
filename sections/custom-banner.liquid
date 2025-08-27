@@ -1,16 +1,16 @@
 {{ 'custom-banner.css | assests_url | stylesheet_tag' }}
 <section class="custom-banner">
-  <div class="banner-content">
-    <h1>{{ section.settings.heading }}</h1>
-    <p>{{ section.settings.subheading }}</p>
-    <div class="banner-buttons">
+  <div class="custom-banner_content">
+    <h1 class="custom-banner_heading">{{ section.settings.heading }}</h1>
+    <p class="custom-banner_subheading">{{ section.settings.subheading }}</p>
+    <div class="custom-banner_buttons">
       {% if section.settings.primary_btn_text != blank %}
-        <a href="{{ section.settings.primary_btn_link }}" class="btn primary">
+        <a href="{{ section.settings.primary_btn_link }}" class="btn btn--primary">
           {{ section.settings.primary_btn_text }}
         </a>
         {% endif %} 
       {% if section.settings.secondary_btn_text != blank %}
-        <a href="{{ section.settings.secondary_btn_link }}" class="btn secondary">
+        <a href="{{ section.settings.secondary_btn_link }}" class="btn btn--secondary">
           {{ section.settings.secondary_btn_text }}
         </a>
       {% endif %}
@@ -20,7 +20,7 @@
 
 {% schema %}
 {
-  "name" : "Customer Banner",
+  "name" : "Custom Banner",
   "settings": [
     {
       "type": "text",
