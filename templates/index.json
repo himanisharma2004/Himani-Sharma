@@ -277,7 +277,7 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
@@ -574,7 +574,7 @@
       "settings": {
         "icons_style": "chevron",
         "slideshow_controls_style": "dots",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
         "autoplay": true,
         "autoplay_speed": 4,
         "section_width": "page-width",
