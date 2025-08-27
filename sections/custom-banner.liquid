@@ -1,67 +1,105 @@
-{{ 'custom-banner.css | assests_url | stylesheet_tag' }}
 <section class="custom-banner">
-  <div class="custom-banner__content">
-    <h1 class="custom-banner__heading">{{ section.settings.heading }}</h1>
-    <p class="custom-banner__subheading">{{ section.settings.subheading }}</p>
-    <div class="custom-banner__buttons">
-      {% if section.settings.primary_btn_text != blank %}
-        <a href="{{ section.settings.primary_btn_link }}" class="btn btn--primary">
-          {{ section.settings.primary_btn_text }}
-        </a>
-        {% endif %} 
-      {% if section.settings.secondary_btn_text != blank %}
-        <a href="{{ section.settings.secondary_btn_link }}" class="btn btn--secondary">
-          {{ section.settings.secondary_btn_text }}
-        </a>
-      {% endif %}
+  <div class="banner-inner">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.subheading }}</p>
+    <button id="open-popup" class="banner-btn">
+      {{ section.settings.button_label }}
+    </button>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <button id="close-popup" class="close-btn">✕</button>
+      <p>{{ section.settings.popup_text }}</p>
     </div>
   </div>
 </section>
 
+<style>
+  .custom-banner {
+    background: url({{ section.settings.bg_image | img_url: 'master' }}) center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+  }
+  .custom-banner h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+  }
+  .custom-banner p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  .banner-btn {
+    background: #FF5722;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  .banner-btn:hover {
+    background: #e64a19;
+  }
+
+  /* Popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup.active { display: flex; }
+  .popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    text-align: center;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup");
+    const openBtn = document.getElementById("open-popup");
+    const closeBtn = document.getElementById("close-popup");
+
+    if(openBtn) openBtn.addEventListener("click", () => popup.classList.add("active"));
+    if(closeBtn) closeBtn.addEventListener("click", () => popup.classList.remove("active"));
+  });
+</script>
+
 {% schema %}
 {
-  "name" : "Custom Banner",
+  "name": "Custom Banner",
   "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Banner Heading",
-      "default": "Welcome to Our Store"
-    },
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Banner Subheading",
-      "default": "Discover our latest collection"
-    },
-    {
-      "type":"url",
-      "id":"primary_btn_link",
-      "label":"Primary Button Link"
-    },
-    {
-      "type": "text",
-      "id":"primary_btn_text",
-      "label":"Primary Button Text",
-      "default": "Shop Now"
-    },
-    {
-      "type":"url",
-      "id": "secondary_btn_link",
-      "label": "Secondary Button Link"
-    },
-    {
-      "type":"text",
-      "id": "secondary_btn_text",
-      "label": "Secondary Button Text",
-      "default": "Learn More"
-    }
-
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Welcome to Our Store" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Discover our new collection" },
+    { "type": "text", "id": "button_label", "label": "Button Label", "default": "Open Popup" },
+    { "type": "textarea", "id": "popup_text", "label": "Popup Text", "default": "This is the popup content!" },
+    { "type": "image_picker", "id": "bg_image", "label": "Background Image" }
   ],
   "presets": [
-    {
-      "name": "Custom Banner"
-    }
+    { "name": "Custom Banner" }
   ]
 }
 {% endschema %}
