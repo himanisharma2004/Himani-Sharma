@@ -1,101 +1,78 @@
-{{ 'custom-product-grid.css' | asset_url | stylesheet_tag }}
 <section class="custom-grid">
-    <div class="custom-grid__container">
-
-            {% assign product1 = all_products[section.settings.product_1 ]%}
-            {% if product1 %}
-                <div class="custom-grid__item" data-handle="{{ product1.handle }}">
-                    {{ product1.featured_image | image_url: width: 433, height: 444, crop: 'center'| image_tag: alt: product1.title, loading: 'lazy'}}
-                    <h3>{{ product1.title }}</h3>
-                    <p>{{ product1.price | money }}</p>
-                </div>
-                    {% endif %}
-                    
-             {% assign product2 = all_products[section.settings.product_2 ]%}
-            {% if product2 %}
-                <div class="custom-grid__item" data-handle="{{ product2.handle }}">
-                    {{ product2.featured_image | image_url: width: 433, height: 444, crop: 'center'| image_tag: alt: product2.title, loading: 'lazy' }}
-                    <h3>{{ product2.title }}</h3>
-                    <p>{{ product2.price | money }}</p>
-                </div>
-                    {% endif %}
-                    
-                     {% assign product3 = all_products[section.settings.product_3 ]%}
-            {% if product3 %}
-                <div class="custom-grid__item" data-handle="{{ product3.handle }}">
-                   {{ product3.featured_image | image_url: width: 433, height: 444, crop: 'center'| image_tag: alt: product3.title, loading: 'lazy' }}
-                    <h3>{{ product3.title }}</h3>
-                    <p>{{ product3.price | money }}</p>
-                </div>
-                    {% endif %}
-                    
-                     {% assign product4 = all_products[section.settings.product_4 ]%}
-            {% if product4 %}
-                <div class="custom-grid__item" data-handle="{{ product4.handle }}">
-                    {{ product4.featured_image | image_url: width: 433, height: 444, crop: 'center'| image_tag: alt: product4.title, loading: 'lazy' }}
-                    <h3>{{ product4.title }}</h3>
-                    <p>{{ product4.price | money }}</p>
-                </div>
-                    {% endif %}
-
-
-                    
-                     {% assign product5 = all_products[section.settings.product_5 ]%}
-            {% if product1 %}
-                <div class="custom-grid__item" data-handle="{{ product5.handle }}">
-                   {{ product5.featured_image | image_url: width: 433, height: 444, crop: 'center'| image_tag: alt: product5.title, loading: 'lazy' }}
-                    <h3>{{ product5.title }}</h3>
-                    <p>{{ product5.price | money }}</p>
-                </div>
-                    {% endif %}
-
-                    
-                     {% assign product6 = all_products[section.settings.product_6 ]%}
-            {% if product6 %}
-                <div class="custom-grid__item" data-handle="{{ product6.handle }}">
-                  {{ product6.featured_image | image_url: width: 433, height: 444, crop: 'center'| image_tag: alt: product6.title, loading: 'lazy' }}
-                    <h3>{{ product6.title }}</h3>
-                    <p>{{ product6.price | money }}</p>
-                </div>
-                    {% endif %}
-                    
-                
-    </div>
-    
-    <div id="product-popup" class="popup-hidden">
-        <div class="popup-content">
-            <span class="popup-close">&times;</span>
-            <img id="popup-image"  alt="" width="433px" height="444">
-            <h2 id="popup-title"></h2>
-            <p id="popup-price"></p>
-            <p id="popup-description"></p>
-
-            <form id="popup-form"></form>
-
-            <button id="add-to-cart" class="btn btn--primary">Add to Cart</button>
-        </div>
-     </div>
+  <div class="grid-wrapper">
+    {% for block in section.blocks %}
+      <div class="grid-item">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+        {% endif %}
+        <h3>{{ block.settings.title }}</h3>
+        <p>{{ block.settings.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </section>
+
+<style>
+  .custom-grid {
+    padding: 60px 20px;
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .grid-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  .grid-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .grid-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .grid-item p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .grid-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .grid-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 
 {% schema %}
 {
-    "name": "Custom Product Grid",
-    "settings": [
-        { "type": "product", "id":"product_1", "label": "Product 1"},
-        { "type": "product", "id":"product_2", "label": "Product 2"},
-        { "type": "product", "id":"product_3", "label": "Product 3"},
-        { "type": "product", "id":"product_4", "label": "Product 4"},
-        { "type": "product", "id":"product_5", "label": "Product 5"},
-        { "type": "product", "id":"product_6", "label": "Product 6"},
-
-    ],
-    "presets": [
-        {
-            "name": "Custom Product Grid"
-        }
-    ]
-    
+  "name": "Custom Grid",
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Grid Item",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Grid Title" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "Grid description goes here." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    { "name": "Custom Grid" }
+  ]
 }
 {% endschema %}
-
-<script src= "{{ 'custom-product-grid.js' | asset_url  }}" defer></script>
