@@ -263,9 +263,9 @@
       "name": "Featured collection",
       "settings": {
         "collection": "all",
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "carousel_on_mobile": true,
-        "max_products": 2,
+        "max_products": 4,
         "columns": 2,
         "mobile_columns": "2",
         "mobile_card_size": "44cqw",
