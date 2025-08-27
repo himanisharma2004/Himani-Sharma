@@ -1,9 +1,9 @@
 {{ 'custom-banner.css | assests_url | stylesheet_tag' }}
 <section class="custom-banner">
-  <div class="custom-banner_content">
-    <h1 class="custom-banner_heading">{{ section.settings.heading }}</h1>
-    <p class="custom-banner_subheading">{{ section.settings.subheading }}</p>
-    <div class="custom-banner_buttons">
+  <div class="custom-banner__content">
+    <h1 class="custom-banner__heading">{{ section.settings.heading }}</h1>
+    <p class="custom-banner__subheading">{{ section.settings.subheading }}</p>
+    <div class="custom-banner__buttons">
       {% if section.settings.primary_btn_text != blank %}
         <a href="{{ section.settings.primary_btn_link }}" class="btn btn--primary">
           {{ section.settings.primary_btn_text }}
