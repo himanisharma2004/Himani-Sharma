@@ -12,5 +12,24 @@
   "context": {
     "market": "ca"
   },
-  "sections": {}
+  "sections": {
+    "header_section": {
+      "settings": {
+        "country_selector_style": true,
+        "enable_sticky_header": "scroll-up",
+        "color_scheme_top": "scheme-3",
+        "enable_transparent_header_home": false,
+        "enable_transparent_header_product": false,
+        "product_color_scheme": "inverse"
+      },
+      "blocks": {}
+    },
+    "header_announcements_9jGBFp": {
+      "settings": {
+        "color_scheme": "scheme-5",
+        "speed": 3
+      },
+      "blocks": {}
+    }
+  }
 }
