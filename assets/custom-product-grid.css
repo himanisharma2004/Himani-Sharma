@@ -4,7 +4,11 @@
     gap: 2 rem;
     padding: 2 rem;
 }
-
+.custom-grid__img img{
+    width: 433px;
+    height:444px;
+    object-fit: cover;
+}
 .product-card{
     background: #fff;
     border: 1 px solid #eee;
