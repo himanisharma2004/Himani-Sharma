@@ -26,14 +26,29 @@
             "case": "none"
           },
           "blocks": {}
+        },
+        "announcement_c33qKf": {
+          "type": "_announcement",
+          "name": "t:names.announcement",
+          "settings": {
+            "text": "Shop our latest <strong>arrivals</strong>!",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "announcement_BxgCk9"
+        "announcement_BxgCk9",
+        "announcement_c33qKf"
       ],
       "name": "t:names.announcement_bar",
       "settings": {
-        "speed": 5,
+        "speed": 3,
         "section_width": "page-width",
         "color_scheme": "scheme-3",
         "divider_width": 1,
