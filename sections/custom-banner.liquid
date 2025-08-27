@@ -15,7 +15,7 @@
     </div>
   </div>
 </section>
-
+{{ 'custom-product-grid.js' | asset_url | script_tag }}
 <style>
   .custom-banner {
     background: url({{ section.settings.bg_image | image_url: 'master' }}) center/cover no-repeat;
@@ -103,4 +103,4 @@
   ]
 }
 {% endschema %}
-{{ 'custom-product-grid.js' | asset_url | script_tag }}
+
