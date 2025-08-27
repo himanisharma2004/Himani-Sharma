@@ -15,7 +15,7 @@
   "sections": {
     "hero_jVaWmY": {
       "settings": {
-        "image_1": "shopify://shop_images/young-female-models-denim_925x_44c2cf9e-4030-4347-9d4a-f0e4a1479b4a.jpg"
+        "image_1": "shopify://shop_images/autumn-photographer-taking-picture_925x_1619bf60-7f6c-4f08-8201-9e5f62349789.jpg"
       },
       "blocks": {}
     },
@@ -25,13 +25,38 @@
         "max_products": 6,
         "color_scheme": "scheme-3"
       },
-      "blocks": {}
+      "blocks": {
+        "static-product-card": {
+          "blocks": {
+            "product_card_gallery_677WP3": {
+              "settings": {
+                "padding-block-start": 36,
+                "padding-inline-start": 36
+              }
+            }
+          },
+          "settings": {}
+        }
+      }
     },
     "slideshow_mKLpDm": {
       "settings": {
-        "color_scheme": "scheme-3"
+        "color_scheme": "scheme-3",
+        "autoplay_speed": 3
       },
-      "blocks": {}
+      "blocks": {
+        "slide_QPgrnC": {
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center"
+          }
+        },
+        "slide_KTeTYW": {
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "center"
+          }
+        }
+      }
     }
   }
 }
