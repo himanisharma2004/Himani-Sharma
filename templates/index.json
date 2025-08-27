@@ -182,9 +182,9 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 0,
+            "padding-block-start": 36,
             "padding-block-end": 11,
-            "padding-inline-start": 0,
+            "padding-inline-start": 17,
             "padding-inline-end": 0
           },
           "blocks": {
