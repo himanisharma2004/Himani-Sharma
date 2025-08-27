@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "section": {
       "type": "section",
@@ -15,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<p>{{ closest.collection.title }}</p>",
+            "text": "<p>Collection</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
