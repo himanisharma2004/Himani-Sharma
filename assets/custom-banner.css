@@ -1,0 +1,68 @@
+/* === Custom Banner Section === */
+.custom-banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  padding: 100px 50px;
+  text-align: left;
+}
+
+.custom-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-banner h1 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.custom-banner p {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.banner-buttons .btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn.primary {
+  background-color: #000;
+  color: #fff;
+  border: 1.5px solid #000;
+}
+
+.btn.primary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-banner {
+    padding: 50px 20px;
+  }
+  .custom-banner h1 {
+    font-size: 42px;
+  }
+  .custom-banner p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
