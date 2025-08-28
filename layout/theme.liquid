@@ -4,6 +4,8 @@
   lang="{{ request.locale.iso_code }}"
 >
   <head>
+    {{ 'custom-product-grid.css' | asset_url | stylesheet_tag }}
+
     {%- render 'stylesheets' -%}
 
     {%- if settings.favicon != blank -%}
