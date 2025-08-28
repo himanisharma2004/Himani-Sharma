@@ -25,7 +25,7 @@
         "carousel_on_mobile": false,
         "max_products": 6,
         "columns": 2,
-        "color_scheme": "scheme-3"
+        "color_scheme": "scheme-1"
       },
       "blocks": {
         "static-product-card": {
