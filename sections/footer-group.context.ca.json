@@ -13,18 +13,10 @@
     "market": "ca"
   },
   "sections": {
-    "footer": {
-      "settings": {
-        "gap": 12,
-        "color_scheme": "scheme-3",
-        "padding-block-start": 13
-      },
-      "blocks": {}
-    },
     "section_6mG98p": {
       "settings": {
-        "padding-block-start": 20,
-        "color_scheme": "scheme-3"
+        "color_scheme": "scheme-1",
+        "padding-block-start": 20
       },
       "blocks": {
         "text_WYf444": {
@@ -44,6 +36,14 @@
           "settings": {}
         }
       }
+    },
+    "footer": {
+      "settings": {
+        "gap": 12,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 13
+      },
+      "blocks": {}
     }
   }
 }
