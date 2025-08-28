@@ -1344,3 +1344,12 @@ color: #000000;
 flex: none;
 order: 0;
 flex-grow: 0;
+/* Vector */
+
+position: absolute;
+left: 2.36%;
+right: 64.02%;
+top: 2.38%;
+bottom: 80.43%;
+
+background: #000000;
