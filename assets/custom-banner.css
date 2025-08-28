@@ -1,61 +1,1260 @@
-/* === Banner (Figma accurate) === */
-.custom-banner {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 120px 40px;
-  background: #fff;
-}
-
-.banner-heading {
-  font-family: 'Jost', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 100%;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.banner-subtext {
-  font-family: 'Jost', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%; /* 28px */
-  color: #000;
-  max-width: 500px;
-  margin-bottom: 40px;
-}
-
-.banner-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  font-family: 'Jost', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: #000;
-  color: #fff;
-  border: 1.5px solid #000;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.banner-btn:hover {
-  background: #333;
-  border-color: #333;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .custom-banner {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  .banner-heading {
-    font-size: 42px;
-  }
-  .banner-subtext {
-    font-size: 16px;
-  }
-}
+/* Desktop - 22 */ 
+/* Auto layout */ 
+display: flex; 
+f
+ lex-direction: column; 
+align-items: center; 
+padding: 0px; 
+gap: 90px; 
+position: relative; 
+width: 1440px; 
+height: 2000px; 
+background: #FFFFFF; 
+/* Frame 1957 */ 
+/* Auto layout */ 
+display: flex; 
+f
+ lex-direction: column; 
+align-items: flex-start; 
+padding: 0px; 
+width: 1440px; 
+height: 878px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 0; 
+align-self: stretch; 
+f
+ lex-grow: 0; 
+/* Frame 1956 */ 
+/* Auto layout */ 
+display: flex; 
+f
+ lex-direction: row; 
+justify-content: center; 
+align-items: center; 
+padding: 10px 50px; 
+gap: 360px; 
+width: 1440px; 
+height: 64px; 
+background: #F5F5F5; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 0; 
+align-self: stretch; 
+f
+ lex-grow: 0; 
+/* Group 1000007777 */ 
+width: 151.44px; 
+height: 19px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 0; 
+f
+ lex-grow: 0; 
+/* Group 1000007775 */ 
+position: absolute; 
+width: 74.79px; 
+height: 19px; 
+left: 127.43px; 
+top: 22.5px; 
+/* Vector */ 
+position: absolute; 
+width: 15.53px; 
+height: 19px; 
+left: 186.69px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 16.15px; 
+height: 19px; 
+left: 127.43px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 11.41px; 
+height: 18.82px; 
+left: 152.12px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 3.11px; 
+height: 18.64px; 
+left: 145.95px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 18.64px; 
+height: 18.64px; 
+left: 165.7px; 
+top: 22.5px; 
+background: #000000; 
+/* Group 1000007776 */ 
+position: absolute; 
+width: 64.31px; 
+height: 18.82px; 
+left: 50.78px; 
+top: 22.5px; 
+/* Vector */ 
+position: absolute; 
+width: 11.41px; 
+height: 18.82px; 
+left: 69.29px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 11.41px; 
+height: 18.82px; 
+left: 82.88px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 3.11px; 
+height: 18.64px; 
+left: 63.12px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 18.64px; 
+height: 18.64px; 
+left: 96.45px; 
+top: 22.5px; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+width: 9.32px; 
+height: 18.64px; 
+left: 50.78px; 
+top: 22.5px; 
+background: #000000; 
+/* Find the ideal gift for your loved ones. */ 
+width: 260px; 
+height: 14px; 
+font-family: 'Jost'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 13px; 
+/* identical to box height, or 84% */ 
+display: flex; 
+align-items: center; 
+text-align: center; 
+color: #000000; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 1; 
+f
+ lex-grow: 0; 
+/* Group 1000007810 */ 
+width: 207px; 
+height: 44px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 2; 
+f
+ lex-grow: 0; 
+/* Rectangle 26035 */ 
+box-sizing: border-box; 
+position: absolute; 
+left: 0%; 
+right: 0%; 
+top: 0%; 
+bottom: 0%; 
+background: #FFF544; 
+/* Line 15 */ 
+position: absolute; 
+left: 77.78%; 
+right: 10.63%; 
+top: 48.99%; 
+bottom: 51.01%; 
+background: #000000; 
+border: 1.5px solid #000000; 
+/* choose yours */ 
+position: absolute; 
+left: 19.81%; 
+right: 30.92%; 
+top: 26.51%; 
+bottom: 25.76%; 
+font-family: 'Jost'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 20px; 
+/* identical to box height, or 128% */ 
+display: flex; 
+align-items: center; 
+text-align: center; 
+text-transform: uppercase; 
+color: #000000; 
+/* Rectangle 26036 */ 
+box-sizing: border-box; 
+position: absolute; 
+left: 0%; 
+right: 99.52%; 
+top: 0%; 
+bottom: 0%; 
+/* Group 1000007949 */ 
+width: 1440px; 
+height: 780px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 1; 
+f
+ lex-grow: 0; 
+/* Rectangle 26167 */ 
+position: absolute; 
+width: 1440px; 
+height: 780px; 
+left: 0px; 
+top: 64px; 
+background: #FFFFFF; 
+/* Group 1000008197 */ 
+position: absolute; 
+width: 1440px; 
+height: 780px; 
+left: 0px; 
+top: 64px; 
+/* Frame */ 
+position: absolute; 
+width: 1440px; 
+height: 390px; 
+left: 0px; 
+top: 64px; 
+/* Vector */ 
+position: absolute; 
+left: 3.36%; 
+right: 89.92%; 
+top: 21.62%; 
+bottom: 3.78%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 3.82%; 
+right: 77.79%; 
+top: -35.84%; 
+bottom: 5.99%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 16.88%; 
+right: 77.98%; 
+top: -35.11%; 
+bottom: 116.12%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 6.95%; 
+right: 79.87%; 
+top: -31.21%; 
+bottom: 122.89%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 2.36%; 
+right: 64.02%; 
+top: -37.18%; 
+bottom: 113.03%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 7.26%; 
+right: 65%; 
+top: -28.51%; 
+bottom: 25.44%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 19.93%; 
+right: 62.47%; 
+top: 52.94%; 
+bottom: 27.76%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 20.11%; 
+right: 63.9%; 
+top: 45.53%; 
+bottom: 22.7%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 12.42%; 
+right: 57.35%; 
+top: 21.34%; 
+bottom: 3.53%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 27.8%; 
+right: 59.51%; 
+top: 28.01%; 
+bottom: 4.48%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 12.83%; 
+right: 62.21%; 
+top: 27.48%; 
+bottom: 4.34%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 14.65%; 
+right: 15.61%; 
+top: -21.49%; 
+bottom: 4.59%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 77.4%; 
+right: 18.58%; 
+top: -9.13%; 
+bottom: 94.32%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 76.22%; 
+right: 2.28%; 
+top: -28.32%; 
+bottom: 72.13%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 85.67%; 
+right: 2.98%; 
+top: -22.62%; 
+bottom: 84.73%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 59.13%; 
+right: 7.06%; 
+top: -27.31%; 
+bottom: 86.87%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 60.01%; 
+right: 31.26%; 
+top: -33.25%; 
+bottom: 102.67%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 60.47%; 
+right: 34.85%; 
+top: -21.39%; 
+bottom: 104.36%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 62.36%; 
+right: 34.64%; 
+top: -22.4%; 
+bottom: 111.52%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 54.66%; 
+right: 27.77%; 
+top: -37.28%; 
+bottom: 95.82%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 66.78%; 
+right: 32.5%; 
+top: -5.09%; 
+bottom: 102.42%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 67.49%; 
+right: 31.9%; 
+top: -30.89%; 
+bottom: 128.65%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 53.96%; 
+right: 26.35%; 
+top: -25.21%; 
+bottom: 3.25%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 43.15%; 
+right: 32.72%; 
+top: -33.07%; 
+bottom: 9.82%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 8.58%; 
+right: 6.28%; 
+top: -14.43%; 
+bottom: 47.52%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 91.95%; 
+right: 6.67%; 
+top: 45.95%; 
+bottom: 48.96%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 87.41%; 
+right: 4.5%; 
+top: 27.7%; 
+bottom: 44.22%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 87.79%; 
+right: 10.82%; 
+top: 29.13%; 
+bottom: 65.78%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 86.53%; 
+right: 2.3%; 
+top: 20.99%; 
+bottom: 60.76%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 94.69%; 
+right: 3.17%; 
+top: 24.26%; 
+bottom: 67.81%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 75.25%; 
+right: 3.55%; 
+top: 25.66%; 
+bottom: 3.57%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 81%; 
+right: 7.12%; 
+top: 50.48%; 
+bottom: 7.92%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 32.11%; 
+right: 6.84%; 
+top: -16.22%; 
+bottom: 7.05%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 46.09%; 
+right: 49.98%; 
+top: 64.65%; 
+bottom: 20.88%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 43.7%; 
+right: 46.79%; 
+top: 52.97%; 
+bottom: 11.92%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 45.18%; 
+right: 48.27%; 
+top: 57.6%; 
+bottom: 13.5%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 45.87%; 
+right: 7.62%; 
+top: -36.9%; 
+bottom: 27.02%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 76.85%; 
+right: 6%; 
+top: -34.44%; 
+bottom: 93.37%; 
+background: #000000; 
+/* Frame */ 
+position: absolute; 
+width: 890px; 
+height: 402px; 
+left: 550px; 
+top: 442px; 
+/* Vector */ 
+position: absolute; 
+left: 5.43%; 
+right: 83.7%; 
+top: 60.28%; 
+bottom: -32.65%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 6.18%; 
+right: 64.06%; 
+top: 4.53%; 
+bottom: -30.51%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 27.31%; 
+right: 64.38%; 
+top: 5.24%; 
+bottom: 76.33%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 11.24%; 
+right: 67.43%; 
+top: 9.03%; 
+bottom: 82.9%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 3.81%; 
+right: 41.79%; 
+top: 3.24%; 
+bottom: 73.33%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 11.75%; 
+right: 43.37%; 
+top: 11.65%; 
+bottom: -11.64%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 32.25%; 
+right: 39.28%; 
+top: 90.66%; 
+bottom: -9.39%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 32.54%; 
+right: 41.59%; 
+top: 83.47%; 
+bottom: -14.29%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 20.1%; 
+right: 30.99%; 
+top: 60.01%; 
+bottom: -32.89%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 44.99%; 
+right: 34.48%; 
+top: 66.48%; 
+bottom: -31.97%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 20.76%; 
+right: 38.85%; 
+top: 65.97%; 
+bottom: -32.11%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 23.71%; 
+right: -36.54%; 
+top: 18.46%; 
+bottom: -31.87%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 125.24%; 
+right: -31.73%; 
+top: 30.45%; 
+bottom: 55.18%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 123.32%; 
+right: -58.11%; 
+top: 11.83%; 
+bottom: 33.66%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 138.6%; 
+right: -56.97%; 
+top: 17.36%; 
+bottom: 45.88%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 95.68%; 
+right: -50.38%; 
+top: 12.81%; 
+bottom: 47.96%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 97.09%; 
+right: -11.21%; 
+top: 7.05%; 
+bottom: 63.29%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 97.83%; 
+right: -5.42%; 
+top: 18.55%; 
+bottom: 64.92%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 100.89%; 
+right: -5.75%; 
+top: 17.57%; 
+bottom: 71.87%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 88.44%; 
+right: -16.87%; 
+top: 3.13%; 
+bottom: 56.65%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 108.04%; 
+right: -9.21%; 
+top: 34.36%; 
+bottom: 63.05%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 109.2%; 
+right: -10.18%; 
+top: 9.33%; 
+bottom: 88.49%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 87.31%; 
+right: -19.16%; 
+top: 14.85%; 
+bottom: -33.16%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 69.81%; 
+right: -8.86%; 
+top: 7.22%; 
+bottom: -26.79%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 13.89%; 
+right: -51.63%; 
+top: 25.3%; 
+bottom: 9.78%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 148.77%; 
+right: -51%; 
+top: 83.88%; 
+bottom: 11.18%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 141.43%; 
+right: -54.52%; 
+top: 66.17%; 
+bottom: 6.58%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 142.05%; 
+right: -44.3%; 
+top: 67.57%; 
+bottom: 27.49%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 140%; 
+right: -58.08%; 
+top: 59.67%; 
+bottom: 22.62%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 153.2%; 
+right: -56.68%; 
+top: 62.83%; 
+bottom: 29.47%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 121.75%; 
+right: -56.06%; 
+top: 64.2%; 
+bottom: -32.86%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 131.05%; 
+right: -50.28%; 
+top: 88.28%; 
+bottom: -28.63%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 51.95%; 
+right: -50.73%; 
+top: 23.57%; 
+bottom: -29.48%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 74.57%; 
+right: 19.06%; 
+top: 102.02%; 
+bottom: -16.07%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 70.7%; 
+right: 13.9%; 
+top: 90.69%; 
+bottom: -24.75%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 73.09%; 
+right: 16.3%; 
+top: 95.19%; 
+bottom: -23.22%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 74.22%; 
+right: -49.46%; 
+top: 3.51%; 
+bottom: -10.11%; 
+background: #000000; 
+/* Vector */ 
+position: absolute; 
+left: 124.35%; 
+right: -52.09%; 
+top: 5.89%; 
+bottom: 54.26%; 
+background: #000000; 
+/* Rectangle 26168 */ 
+position: absolute; 
+visibility: hidden; 
+width: 1440px; 
+height: 780px; 
+left: 0px; 
+top: 64px; 
+background: rgba(255, 255, 255, 0.2); 
+/* Group 1000008102/Default */ 
+position: absolute; 
+width: 220px; 
+left: calc(50% - 220px/2 - 542px); 
+top: 84.17%; 
+bottom: 10.14%; 
+/* The Gift Guide */ 
+position: absolute; 
+left: 4.65%; 
+right: 63.47%; 
+top: 55.69%; 
+bottom: 36.33%; 
+font-family: 'Jost'; 
+font-style: normal; 
+font-weight: 500; 
+font-size: 70px; 
+line-height: 100%; 
+/* identical to box height, or 70px */ 
+display: flex; 
+align-items: center; 
+color: #000000; 
+/* Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones 
+this holiday season. */ 
+position: absolute; 
+width: 483px; 
+height: 84px; 
+left: calc(50% - 483px/2 - 411.5px); 
+top: 609px; 
+font-family: 'Jost'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 20px; 
+line-height: 140%; 
+/* or 28px */ 
+display: flex; 
+align-items: center; 
+color: #000000; 
+/* Component 207 */ 
+position: absolute; 
+width: 220px; 
+height: 50px; 
+left: 67px; 
+top: 743px; 
+/* Rectangle 26035 */ 
+box-sizing: border-box; 
+position: absolute; 
+left: 0%; 
+right: 0%; 
+top: 0%; 
+bottom: 0%; 
+background: #000000; 
+/* Line 15 */ 
+position: absolute; 
+left: 77.78%; 
+right: 10.63%; 
+top: 48.99%; 
+bottom: 51.01%; 
+background: #FFFFFF; 
+border: 1.5px solid #FFFFFF; 
+/* choose yours */ 
+position: absolute; 
+left: 25.03%; 
+right: 35.42%; 
+top: 28.51%; 
+bottom: 29.49%; 
+font-family: 'Jost'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 20px; 
+/* identical to box height, or 128% */ 
+display: flex; 
+align-items: center; 
+text-align: center; 
+text-transform: uppercase; 
+color: #FFFFFF; 
+/* Rectangle 26036 */ 
+box-sizing: border-box; 
+position: absolute; 
+left: 0%; 
+right: 99.52%; 
+top: 0%; 
+bottom: 0%; 
+/* Frame 1957 */ 
+/* Auto layout */ 
+display: flex; 
+f
+ lex-direction: row; 
+justify-content: center; 
+align-items: center; 
+padding: 10px 50px; 
+gap: 375px; 
+width: 1440px; 
+height: 34px; 
+background: #F5F5F5; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 2; 
+align-self: stretch; 
+f
+ lex-grow: 0; 
+/* SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL */ 
+width: 451px; 
+height: 14px; 
+font-family: 'Jost'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 13px; 
+/* identical to box height, or 84% */ 
+display: flex; 
+align-items: center; 
+text-align: center; 
+color: #000000; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 0; 
+f
+ lex-grow: 0; 
+/* Frame 1000009744 */ 
+/* Auto layout */ 
+display: flex; 
+f
+ lex-direction: column; 
+align-items: flex-start; 
+padding: 0px; 
+gap: 30px; 
+width: 1337px; 
+height: 981px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 1; 
+f
+ lex-grow: 0; 
+/* Tisso vison in the wild */ 
+width: 372px; 
+height: 43px; 
+font-family: 'Lustria'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 36px; 
+line-height: 120%; 
+/* or 43px */ 
+display: flex; 
+align-items: center; 
+color: #000000; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 0; 
+f
+ lex-grow: 0; 
+/* Frame 1000009723 */ 
+/* Auto layout */ 
+display: flex; 
+f
+ lex-direction: row; 
+f
+ lex-wrap: wrap; 
+align-items: flex-start; 
+align-content: flex-start; 
+padding: 0px; 
+gap: 20px; 
+width: 1339px; 
+height: 908px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 1; 
+f
+ lex-grow: 0; 
+/* Group 1000008178 */ 
+width: 433px; 
+height: 444px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 0; 
+f
+ lex-grow: 0; 
+/* image 822 */ 
+position: absolute; 
+width: 433px; 
+height: 444px; 
+left: 0px; 
+top: 0px; 
+background: url(image.png); 
+/* Group 1000008190 */ 
+position: absolute; 
+width: 22px; 
+height: 22px; 
+left: 256.5px; 
+top: 238px; 
+/* Ellipse 451 */ 
+position: absolute; 
+left: 19.16%; 
+right: 79.2%; 
+top: 26.21%; 
+bottom: 71.37%; 
+background: rgba(248, 248, 248, 0.9); 
+/* Group 1000008134 */ 
+position: absolute; 
+left: 19.69%; 
+right: 79.68%; 
+top: 26.99%; 
+bottom: 72.08%; 
+/* Vector */ 
+position: absolute; 
+left: 20%; 
+right: 80%; 
+top: 26.99%; 
+bottom: 72.08%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Vector */ 
+position: absolute; 
+left: 19.69%; 
+right: 79.68%; 
+top: 27.45%; 
+bottom: 72.55%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Group 1000008174 */ 
+width: 433px; 
+height: 444px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 1; 
+f
+ lex-grow: 0; 
+/* image 823 */ 
+position: absolute; 
+width: 433px; 
+height: 444px; 
+left: 453px; 
+top: 0px; 
+background: url(image.png); 
+/* Group 1000008185 */ 
+position: absolute; 
+width: 22px; 
+height: 22px; 
+left: 808.5px; 
+top: 222px; 
+/* Ellipse 451 */ 
+position: absolute; 
+left: 60.38%; 
+right: 37.98%; 
+top: 24.45%; 
+bottom: 73.13%; 
+background: rgba(248, 248, 248, 0.9); 
+/* Group 1000008134 */ 
+position: absolute; 
+left: 60.91%; 
+right: 38.46%; 
+top: 25.22%; 
+bottom: 73.84%; 
+/* Vector */ 
+position: absolute; 
+left: 61.23%; 
+right: 38.77%; 
+top: 25.22%; 
+bottom: 73.84%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Vector */ 
+position: absolute; 
+left: 60.91%; 
+right: 38.46%; 
+top: 25.69%; 
+bottom: 74.31%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Group 1000008174 */ 
+width: 433px; 
+height: 444px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 2; 
+f
+ lex-grow: 0; 
+/* image 824 */ 
+position: absolute; 
+width: 433px; 
+height: 444px; 
+left: 906px; 
+top: 0px; 
+background: url(image.png); 
+/* Group 1000008186 */ 
+position: absolute; 
+width: 22px; 
+height: 22px; 
+left: 1167px; 
+top: 82px; 
+/* Ellipse 451 */ 
+position: absolute; 
+left: 87.15%; 
+right: 11.2%; 
+top: 9.03%; 
+bottom: 88.55%; 
+background: rgba(248, 248, 248, 0.9); 
+/* Group 1000008134 */ 
+position: absolute; 
+left: 87.69%; 
+right: 11.68%; 
+top: 9.81%; 
+bottom: 89.26%; 
+/* Vector */ 
+position: absolute; 
+left: 88%; 
+right: 12%; 
+top: 9.81%; 
+bottom: 89.26%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Vector */ 
+position: absolute; 
+left: 87.69%; 
+right: 11.68%; 
+top: 10.27%; 
+bottom: 89.73%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Group 1000008177 */ 
+width: 433px; 
+height: 444px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 3; 
+f
+ lex-grow: 0; 
+/* image 825 */ 
+position: absolute; 
+width: 433px; 
+height: 444px; 
+left: 0px; 
+top: 464px; 
+background: url(image.png); 
+/* Group 1000008188 */ 
+position: absolute; 
+width: 22px; 
+height: 22px; 
+left: 301.5px; 
+top: 535px; 
+/* Ellipse 451 */ 
+position: absolute; 
+left: 22.52%; 
+right: 75.84%; 
+top: 58.92%; 
+bottom: 38.66%; 
+background: rgba(248, 248, 248, 0.9); 
+/* Group 1000008134 */ 
+position: absolute; 
+left: 23.05%; 
+right: 76.32%; 
+top: 59.7%; 
+bottom: 39.37%; 
+/* Vector */ 
+position: absolute; 
+left: 23.36%; 
+right: 76.64%; 
+top: 59.7%; 
+bottom: 39.37%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Vector */ 
+position: absolute; 
+left: 23.05%; 
+right: 76.32%; 
+top: 60.16%; 
+bottom: 39.84%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Group 1000008175 */ 
+width: 433px; 
+height: 444px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 4; 
+f
+ lex-grow: 0; 
+/* image 826 */ 
+position: absolute; 
+width: 433px; 
+height: 444px; 
+left: 453px; 
+top: 464px; 
+background: url(image.png); 
+/* Group 1000008189 */ 
+position: absolute; 
+width: 22px; 
+height: 22px; 
+left: 665.5px; 
+top: 568px; 
+/* Ellipse 451 */ 
+position: absolute; 
+left: 49.7%; 
+right: 48.66%; 
+top: 62.56%; 
+bottom: 35.02%; 
+background: rgba(248, 248, 248, 0.9); 
+/* Group 1000008134 */ 
+position: absolute; 
+left: 50.23%; 
+right: 49.14%; 
+top: 63.33%; 
+bottom: 35.74%; 
+/* Vector */ 
+position: absolute; 
+left: 50.55%; 
+right: 49.45%; 
+top: 63.33%; 
+bottom: 35.74%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Vector */ 
+position: absolute; 
+left: 50.23%; 
+right: 49.14%; 
+top: 63.8%; 
+bottom: 36.2%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Group 1000008176 */ 
+width: 433px; 
+height: 444px; 
+/* Inside auto layout */ 
+f
+ lex: none; 
+order: 5; 
+f
+ lex-grow: 0; 
+/* image 827 */ 
+position: absolute; 
+width: 433px; 
+height: 444px; 
+left: 906px; 
+top: 464px; 
+background: url(image.png); 
+/* Group 1000008187 */ 
+position: absolute; 
+width: 22px; 
+height: 22px; 
+left: 1225.5px; 
+top: 628px; 
+/* Ellipse 451 */ 
+position: absolute; 
+left: 91.52%; 
+right: 6.83%; 
+top: 69.16%; 
+bottom: 28.41%; 
+background: rgba(248, 248, 248, 0.9); 
+/* Group 1000008134 */ 
+position: absolute; 
+left: 92.05%; 
+right: 7.31%; 
+top: 69.94%; 
+bottom: 29.13%; 
+/* Vector */ 
+position: absolute; 
+left: 92.37%; 
+right: 7.63%; 
+top: 69.94%; 
+bottom: 29.13%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
+/* Vector */ 
+position: absolute; 
+left: 92.05%; 
+right: 7.31%; 
+top: 70.4%; 
+bottom: 29.6%; 
+background: rgba(248, 248, 248, 0.9); 
+border: 1.5px solid #000000; 
