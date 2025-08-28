@@ -1,10 +1,9 @@
 <div class="custom-product-grid">
-  <h2>{{ section.settings.title }}</h2>
+  <h2 class="grid-title">{{ section.settings.title }}</h2>
   <div class="grid-container">
     {% for i in (1..6) %}
       {% assign product_var = 'product' | append: i %}
       {% assign product_obj = all_products[section.settings[product_var]] %}
-
       {% if product_obj %}
         <div class="grid-item" data-handle="{{ product_obj.handle }}">
           <img 
