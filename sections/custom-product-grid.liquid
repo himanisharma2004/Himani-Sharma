@@ -4,7 +4,7 @@
       {% assign product = all_products[block.settings.product] %}
       {% if product %}
         <div class="grid-item" data-handle="{{ product.handle }}">
-          <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
+          <img src="{{ product.featured_image | image_url: 'large' }}" alt="{{ product.title }}">
           <h3>{{ product.title }}</h3>
           <p>{{ product.price | money }}</p>
           <button class="quick-view" data-handle="{{ product.handle }}">View</button>
