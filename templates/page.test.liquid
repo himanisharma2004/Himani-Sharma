@@ -1,7 +1,16 @@
-# /templates/page.test.liquid
-{% layout 'theme' %}
-
-<div class="custom-page-wrapper">
-  {%- section 'custom-banner' -%}
-  {%- section 'custom-product-grid' -%}
-</div>
+{
+  "sections": {
+    "custom_banner": {
+      "type": "custom-banner",
+      "settings": {}
+    },
+    "custom_product_grid": {
+      "type": "custom-product-grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "custom_banner",
+    "custom_product_grid"
+  ]
+}
