@@ -527,3 +527,220 @@ bottom: 29.6%;
 
 background: rgba(248, 248, 248, 0.9);
 border: 1.5px solid #000000;
+/* Component 206 */
+
+box-sizing: border-box;
+
+position: relative;
+width: 260px;
+height: 160px;
+
+border: 1px dashed #9747FF;
+border-radius: 5px;
+
+
+/* Property 1=Frame 1949 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+isolation: isolate;
+
+position: absolute;
+width: 220px;
+height: 50px;
+left: 20px;
+top: 20px;
+
+
+
+/* Group 1000008111 */
+
+width: 220px;
+height: 50px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Rectangle 26035 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Rectangle 26036 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 99.55%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Line 15 */
+
+position: absolute;
+left: 76.17%;
+right: 11.4%;
+top: 48.89%;
+bottom: 51.11%;
+
+background: #F5F5F5;
+border: 1.5px solid #F5F5F5;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Shop now */
+
+position: absolute;
+left: 11.11%;
+right: 28.79%;
+top: 28.71%;
+bottom: 28.44%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 128% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #F5F5F5;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Property 1=Frame 1950 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+isolation: isolate;
+
+position: absolute;
+height: 50px;
+left: 20px;
+right: 20px;
+top: 90px;
+
+
+
+/* Group 1000008112 */
+
+width: 220px;
+height: 50px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Rectangle 26035 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Rectangle 26036 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFF544;
+
+
+/* Line 15 */
+
+position: absolute;
+left: 76.17%;
+right: 11.4%;
+top: 48.89%;
+bottom: 51.11%;
+
+background: #000000;
+border: 1.5px solid #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* shop now */
+
+position: absolute;
+left: 11.11%;
+right: 28.79%;
+top: 28.71%;
+bottom: 28.44%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 128% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
