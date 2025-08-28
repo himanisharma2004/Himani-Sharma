@@ -22,19 +22,19 @@
     "product_list_fa6P9H": {
       "settings": {
         "layout_type": "grid",
-        "max_products": 6,
-        "color_scheme": "scheme-3",
         "carousel_on_mobile": false,
-        "columns": 2
+        "max_products": 6,
+        "columns": 2,
+        "color_scheme": "scheme-3"
       },
       "blocks": {
         "static-product-card": {
           "blocks": {
             "product_card_gallery_677WP3": {
               "settings": {
+                "border": "none",
                 "padding-block-start": 36,
-                "padding-inline-start": 17,
-                "border": "none"
+                "padding-inline-start": 17
               }
             }
           },
@@ -44,7 +44,7 @@
     },
     "slideshow_mKLpDm": {
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "autoplay_speed": 3
       },
       "blocks": {
