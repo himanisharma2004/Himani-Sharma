@@ -7,7 +7,7 @@
       {% if product_obj %}
         <div class="grid-item" data-handle="{{ product_obj.handle }}">
           <img 
-            src="{{ product_obj.featured_image | image_url: width: 433, height: 444, crop: "center" }}" 
+            src="{{ product_obj.featured_image | image_url: width: 433, height: 444, crop: 'center' }}" 
             alt="{{ product_obj.title }}">
         </div>
       {% endif %}
