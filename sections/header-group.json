@@ -77,7 +77,7 @@
           "type": "_header-menu",
           "static": true,
           "settings": {
-            "menu": "main-menu",
+            "menu": "",
             "menu_style": "featured_products",
             "featured_products_aspect_ratio": "adapt",
             "featured_collections_aspect_ratio": "16 / 9",
@@ -103,7 +103,7 @@
         }
       },
       "settings": {
-        "logo_position": "right",
+        "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
         "show_search": true,
