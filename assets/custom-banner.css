@@ -1227,3 +1227,388 @@ top: 70.4%;
 bottom: 29.6%; 
 background: rgba(248, 248, 248, 0.9); 
 border: 1.5px solid #000000; 
+/* Frame 1000009755 */
+
+position: relative;
+width: 311px;
+height: 447px;
+
+background: #FFFFFF;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+
+/* Component 211 */
+
+position: absolute;
+left: 6.43%;
+right: 6.43%;
+top: 41.61%;
+bottom: 43.96%;
+
+
+
+/* Rectangle 26065 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 97.86%;
+top: 37.23%;
+bottom: 0.04%;
+
+background: #FFFFFF;
+border: 0.5px solid #000000;
+
+
+/* Rectangle 26067 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 50%;
+right: 48.21%;
+top: 37.86%;
+bottom: 0.67%;
+
+background: #000000;
+border: 0.5px solid #000000;
+
+
+/* Rectangle 18 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 37.28%;
+bottom: 0%;
+
+border: 0.5px solid #000000;
+
+
+/* White */
+
+position: absolute;
+left: 5.54%;
+right: 53.14%;
+top: 54.28%;
+bottom: 17.8%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #000000;
+
+
+
+/* black */
+
+position: absolute;
+left: 54.98%;
+right: 2.58%;
+top: 54.28%;
+bottom: 17.8%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #000000;
+
+
+
+/* Color */
+
+position: absolute;
+left: 0%;
+right: 87.82%;
+top: 0%;
+bottom: 72.08%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+color: #333333;
+
+
+
+/* This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief. */
+
+position: absolute;
+width: 146px;
+height: 60px;
+left: calc(50% - 146px/2 + 62.5px);
+top: 119px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 110%;
+/* or 15px */
+letter-spacing: -0.01em;
+
+color: #000000;
+
+
+
+/* 980,00€ */
+
+position: absolute;
+left: 46.62%;
+right: 32.8%;
+top: 19.69%;
+bottom: 76.06%;
+
+font-family: 'Lustria';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+/* or 19px */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Orange Wide Leg */
+
+position: absolute;
+left: 46.62%;
+right: 9.65%;
+top: 10.96%;
+bottom: 84.79%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 120%;
+/* or 19px */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* image 846 */
+
+position: absolute;
+left: 5.47%;
+right: 55.95%;
+top: 8.05%;
+bottom: 60.63%;
+
+background: url(image.png);
+
+
+/* Group 1000008134 */
+
+position: absolute;
+left: 89.64%;
+right: 6.5%;
+top: 2.84%;
+bottom: 94.47%;
+
+transform: rotate(-45deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 91.01%;
+right: 8.99%;
+top: 3.79%;
+bottom: 93.52%;
+
+background: rgba(248, 248, 248, 0.9);
+border: 1.5px solid #000000;
+transform: rotate(-45deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 91.01%;
+right: 5.13%;
+top: 3.79%;
+bottom: 96.21%;
+
+background: rgba(248, 248, 248, 0.9);
+border: 1.5px solid #000000;
+transform: rotate(-45deg);
+
+
+/* Group 1000007810 */
+
+position: absolute;
+width: 271px;
+height: 45px;
+left: 20px;
+top: 377px;
+
+
+
+/* Rectangle 26035 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 6.43%;
+right: 6.43%;
+top: 84.34%;
+bottom: 5.59%;
+
+background: #000000;
+
+
+/* Line 15 */
+
+position: absolute;
+left: 72.8%;
+right: 16.36%;
+top: 89.26%;
+bottom: 10.74%;
+
+background: #FFFFFF;
+border: 1.5px solid #FFFFFF;
+
+
+/* Add to cart */
+
+position: absolute;
+width: 103.91px;
+left: calc(50% - 103.91px/2 - 9.13px);
+top: 87.02%;
+bottom: 8.28%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 128% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Component 213 */
+
+position: absolute;
+height: 64px;
+left: 6.43%;
+right: 6.43%;
+top: 262px;
+
+
+
+/* Group 1000007963 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 38.04%;
+bottom: -1.23%;
+
+
+
+/* Rectangle 17 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 38.04%;
+bottom: -1.23%;
+
+border: 0.5px solid #000000;
+
+
+/* Line 25 */
+
+position: absolute;
+left: 79.7%;
+right: 5.64%;
+top: 38.34%;
+bottom: 61.66%;
+
+border: 0.5px solid #000000;
+transform: rotate(90deg);
+
+
+/* Choose your size */
+
+position: absolute;
+left: 4.8%;
+right: 26.94%;
+top: 54.69%;
+bottom: 14.06%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* or 16px */
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+
+/* Size */
+
+position: absolute;
+left: 0%;
+right: 90.77%;
+top: 0%;
+bottom: 71.88%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+color: #333333;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 87.82%;
+right: 7.75%;
+top: 65.62%;
+bottom: 25%;
+
+border: 1.5px solid #000000;
