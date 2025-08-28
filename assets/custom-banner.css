@@ -1,8 +1,7 @@
 /* Desktop - 22 */ 
 /* Auto layout */ 
 display: flex; 
-f
- lex-direction: column; 
+flex-direction: column; 
 align-items: center; 
 padding: 0px; 
 gap: 90px; 
@@ -13,24 +12,20 @@ background: #FFFFFF;
 /* Frame 1957 */ 
 /* Auto layout */ 
 display: flex; 
-f
- lex-direction: column; 
+flex-direction: column; 
 align-items: flex-start; 
 padding: 0px; 
 width: 1440px; 
 height: 878px; 
 /* Inside auto layout */ 
-f
- lex: none; 
+flex: none; 
 order: 0; 
 align-self: stretch; 
-f
- lex-grow: 0; 
+flex-grow: 0; 
 /* Frame 1956 */ 
 /* Auto layout */ 
 display: flex; 
-f
- lex-direction: row; 
+flex-direction: row; 
 justify-content: center; 
 align-items: center; 
 padding: 10px 50px; 
@@ -39,12 +34,10 @@ width: 1440px;
 height: 64px; 
 background: #F5F5F5; 
 /* Inside auto layout */ 
-f
- lex: none; 
+flex: none; 
 order: 0; 
 align-self: stretch; 
-f
- lex-grow: 0; 
+flex-grow: 0; 
 /* Group 1000007777 */ 
 width: 151.44px; 
 height: 19px; 
@@ -52,8 +45,7 @@ height: 19px;
 f
  lex: none; 
 order: 0; 
-f
- lex-grow: 0; 
+flex-grow: 0; 
 /* Group 1000007775 */ 
 position: absolute; 
 width: 74.79px; 
@@ -153,17 +145,14 @@ color: #000000;
 f
  lex: none; 
 order: 1; 
-f
- lex-grow: 0; 
+flex-grow: 0; 
 /* Group 1000007810 */ 
 width: 207px; 
 height: 44px; 
 /* Inside auto layout */ 
-f
- lex: none; 
+flex: none; 
 order: 2; 
-f
- lex-grow: 0; 
+flex-grow: 0; 
 /* Rectangle 26035 */ 
 box-sizing: border-box; 
 position: absolute; 
@@ -208,11 +197,9 @@ bottom: 0%;
 width: 1440px; 
 height: 780px; 
 /* Inside auto layout */ 
-f
- lex: none; 
+flex: none; 
 order: 1; 
-f
- lex-grow: 0; 
+flex-grow: 0; 
 /* Rectangle 26167 */ 
 position: absolute; 
 width: 1440px; 
