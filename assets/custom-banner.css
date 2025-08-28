@@ -1829,3 +1829,153 @@ flex: none;
 order: 2;
 flex-grow: 0;
 z-index: 2;
+/* Component 207 */
+
+box-sizing: border-box;
+
+position: relative;
+width: 260px;
+height: 160px;
+
+border: 1px dashed #9747FF;
+border-radius: 5px;
+
+
+/* Property 1=Group 1000007810 */
+
+position: absolute;
+width: 220px;
+height: 50px;
+left: 20px;
+top: 90px;
+
+filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+
+
+/* Rectangle 26035 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Rectangle 26036 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFF544;
+
+
+/* Line 15 */
+
+position: absolute;
+left: 77.78%;
+right: 10.63%;
+top: 48.99%;
+bottom: 51.01%;
+
+background: #000000;
+border: 1.5px solid #000000;
+
+
+/* choose yours */
+
+position: absolute;
+left: 25.03%;
+right: 35.42%;
+top: 28.51%;
+bottom: 29.49%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 128% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Property 1=Group 1000008196 */
+
+position: absolute;
+width: 220px;
+height: 50px;
+left: 20px;
+top: 20px;
+
+
+
+/* Rectangle 26035 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Line 15 */
+
+position: absolute;
+left: 77.78%;
+right: 10.63%;
+top: 48.99%;
+bottom: 51.01%;
+
+background: #FFFFFF;
+border: 1.5px solid #FFFFFF;
+
+
+/* choose yours */
+
+position: absolute;
+left: 25.03%;
+right: 35.42%;
+top: 28.51%;
+bottom: 29.49%;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 128% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 26036 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 99.52%;
+top: 0%;
+bottom: 0%;
+
