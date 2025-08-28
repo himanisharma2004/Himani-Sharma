@@ -1,78 +1,47 @@
-<section class="custom-grid">
-  <div class="grid-wrapper">
-    {% for block in section.blocks %}
-      <div class="grid-item">
-        {% if block.settings.image != blank %}
-          "{{ block.settings.image | image_url: 'medium' }}" alt="{{ block.settings.title }}"
-        {% endif %}
-        <h3>{{ block.settings.title }}</h3>
-        <p>{{ block.settings.text }}</p>
-      </div>
+<div class="custom-product-grid">
+  <h2>{{ section.settings.title }}</h2>
+  <div class="grid-container">
+    {% for i in (1..6) %}
+      {% assign product_var = 'product' | append: i %}
+      {% assign product_obj = all_products[section.settings[product_var]] %}
+
+      {% if product_obj %}
+        <div class="grid-item" data-handle="{{ product_obj.handle }}">
+          <img 
+            src="{{ product_obj.featured_image | image_url: width: 433, height: 444, crop: "center" }}" 
+            alt="{{ product_obj.title }}">
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
-</section>
+</div>
 
-<style>
-  .custom-grid {
-    padding: 60px 20px;
-  }
-  .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-  .grid-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  .grid-item img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-  }
-  .grid-item h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .grid-item p {
-    font-size: 16px;
-    color: #555;
-  }
-
-  /* Responsive */
-  @media (max-width: 992px) {
-    .grid-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (max-width: 600px) {
-    .grid-wrapper {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
+<!-- Product Popup -->
+<div id="product-popup" class="product-popup hidden">
+  <div class="product-popup-content">
+    <span class="product-popup-close">&times;</span>
+    <h2 id="popup-title"></h2>
+    <p class="product-popup-price" id="popup-price"></p>
+    <div class="product-popup-desc" id="popup-description"></div>
+    <div class="product-popup-variants" id="popup-variants"></div>
+    <button class="product-popup-add" id="popup-add-to-cart">Add to Cart</button>
+  </div>
+</div>
 
 {% schema %}
 {
-  "name": "Custom Grid",
-  "blocks": [
-    {
-      "type": "item",
-      "name": "Grid Item",
-      "settings": [
-        { "type": "image_picker", "id": "image", "label": "Image" },
-        { "type": "text", "id": "title", "label": "Title", "default": "Grid Title" },
-        { "type": "textarea", "id": "text", "label": "Description", "default": "Grid description goes here." }
-      ]
-    }
+  "name": "Custom Product Grid",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Section Title", "default": "Tisso Vison in the Wild" },
+    { "type": "product", "id": "product1", "label": "Product 1" },
+    { "type": "product", "id": "product2", "label": "Product 2" },
+    { "type": "product", "id": "product3", "label": "Product 3" },
+    { "type": "product", "id": "product4", "label": "Product 4" },
+    { "type": "product", "id": "product5", "label": "Product 5" },
+    { "type": "product", "id": "product6", "label": "Product 6" }
   ],
-  "max_blocks": 6,
   "presets": [
-    { "name": "Custom Grid" }
+    { "name": "Custom Product Grid" }
   ]
 }
 {% endschema %}
