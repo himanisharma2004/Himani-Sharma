@@ -1,0 +1,45 @@
+<section class="custom-grid">
+  <div class="grid-container">
+    {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.product] %}
+      {% if product %}
+        <div class="grid-item">
+          <img 
+            src="{{ product.featured_image | image_url: '600x600' }}" 
+            alt="{{ product.title }}"
+            width="600"
+            height="600"
+          >
+          <h3 class="product-title">{{ product.title }}</h3>
+          <p class="product-price">{{ product.price | money }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Product Grid",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Custom Product Grid",
+      "category": "Products"
+    }
+  ]
+}
+{% endschema %}
