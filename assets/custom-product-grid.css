@@ -4121,3 +4121,58 @@ top: 35.38%;
 bottom: 35.94%;
 
 background: #000000;
+/* Frame 1000008096 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 13px 20px;
+gap: 10px;
+
+position: relative;
+width: 193px;
+height: 45px;
+
+background: #000000;
+
+
+/* Shop Now */
+
+width: 119px;
+height: 19px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 128% */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #F5F5F5;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Line 15 */
+
+width: 24px;
+height: 0px;
+
+background: #F5F5F5;
+border: 1.5px solid #F5F5F5;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
